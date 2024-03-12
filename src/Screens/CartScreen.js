@@ -1,27 +1,26 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, Pressable, View } from "react-native";
 
 import { styles } from "../CSS/styles";
 
 const CartScreen = ({ navigation }) => {
   return (
-    <View>
-      <Text style={styles.h1}>CartScreen</Text>
+    <>
       <View style={styles.containerBtn}>
-        <TouchableOpacity
+        <Pressable
           onPress={() => [navigation.navigate("Home")]}
           style={styles.btn}
         >
           <Text style={styles.textBtn}>Home</Text>
-        </TouchableOpacity>
-        <TouchableOpacity 
+        </Pressable>
+        <Pressable 
           onPress={() => [navigation.navigate("Contact")]}
           style={styles.btn}
         >
           <Text style={styles.textBtn}>Contact Us</Text>
-        </TouchableOpacity>
+        </Pressable>
       </View>
-    </View>
+    </>
   );
 };
 

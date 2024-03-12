@@ -8,7 +8,11 @@ export const styles = StyleSheet.create({
         borderRadius: 50,
         margin: 50,
         padding: 10,
-        width: "20%"
+        width: "25%",
+        paddingTop: 5,
+        paddingBottom: 5,
+        paddingHorizontal: 10, 
+        textAlign: "center",
     },
     containerBtn: {
         alignItems: "center",
@@ -22,6 +26,6 @@ export const styles = StyleSheet.create({
         textAlign: "center",
     },
     textBtn: { 
-        fontSize: 12 
+        fontSize: 12,
     },
 });

@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
+export const commonSmStyles = StyleSheet.create({
     btn: {
         alignItems: "center",
         alignSelf: "center",
@@ -27,5 +27,12 @@ export const styles = StyleSheet.create({
     },
     textBtn: { 
         fontSize: 12,
+    },
+    wrapper: {
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
     },
 });

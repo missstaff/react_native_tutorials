@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import { validateEmail } from "../common/utilities.js";
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config("../app/.env");
 
 
 const app = express();
